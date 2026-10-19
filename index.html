@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periódicos por países</title>
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f2fe, #f5f3ff);
+            margin: 0;
+            padding: 0;
+            color: #1e293b;
+        }
+
+        /* Encabezado */
+        header {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+
+        /* Contenedor principal */
+        main {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        /* Tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+        }
+
+        td {
+            padding: 18px;
+            border: 1px solid #dbeafe;
+            text-align: left;
+        }
+
+        /* Columna del país */
+        td:first-child {
+            background: #2563eb;
+            color: white;
+            text-align: center;
+            width: 25%;
+            font-size: 18px;
+        }
+
+        /* Nombre del periódico */
+        td:nth-child(2) {
+            font-weight: bold;
+            width: 30%;
+        }
+
+        /* Enlaces */
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+            overflow-wrap: anywhere;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #dc2626;
+            text-decoration: underline;
+        }
+
+        /* Efecto al pasar el cursor */
+        table:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+        }
+
+        /* Pie de página */
+        footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+
+        /* Adaptación para celulares */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            main {
+                padding: 0 10px;
+            }
+
+            td {
+                padding: 12px 8px;
+                font-size: 13px;
+            }
+
+            td:first-child {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>📰 Periódicos por países</h1>
+        <p>Consulta noticias y medios informativos de Latinoamérica</p>
+    </header>
+
+    <main>
+
+        <table>
+            <tr>
+                <td><b>Ecuador</b>
+                <img src="ecuador.png" alt="Ecuador" width="75" height="50"></td>
+                <td>El Comercio</td>
+                <td>
+                     
+                    <a href="https://www.elcomercio.com/"
+                       target="_blank" rel="noopener noreferrer">
+                        www.elcomercio.com ↗
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td><b>México</b>
+                <img src="mexico.png" alt="México" width="75" height="50"></td>
+                <td>Azteca Noticias</td>
+                <td>
+                    <a href="https://x.com/AztecaNoticias?lang=es"
+                       target="_blank" rel="noopener noreferrer">
+                        Azteca Noticias en X ↗
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td><b>Argentina</b>
+                <img src="argentina.png" alt="Argentina" width="75" height="50"></td>
+                <td>Argentina.gob.ar</td>
+                <td>
+                    <a href="https://www.argentina.gob.ar/noticias"
+                       target="_blank" rel="noopener noreferrer">
+                        www.argentina.gob.ar/noticias ↗
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td><b>Colombia</b>
+                <img src="colombia.png" alt="Colombia" width="75" height="50"></td>
+                <td>El Colombiano</td>
+                <td>
+                    <a href="https://www.elcolombiano.com/"
+                       target="_blank" rel="noopener noreferrer">
+                        www.elcolombiano.com ↗
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+    </main>
+
+    <footer>
+    
+        <p>creado por Cevallos Nicolas y Lozada Maria Jose</p>
+    </footer>
+
+</body>
+</html>
